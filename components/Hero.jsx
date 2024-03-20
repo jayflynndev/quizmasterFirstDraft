@@ -1,5 +1,5 @@
 import React from "react";
-import QuiznightSearchForm from "./QuiznightSearchForm";
+import QuiznightSearchForm from "@/QuiznightSearchForm";
 
 const Hero = () => {
   return (
