@@ -90,8 +90,8 @@ export const PUT = async (request, { params }) => {
 
     const formData = await request.formData();
 
-    // Access all values from amenities
-    const amenities = formData.getAll("amenities");
+    // Access all values from features
+    const features = formData.getAll("features");
 
     // Get quiznight to update
     const existingQuiznight = await Quiznight.findById(id);
@@ -119,7 +119,7 @@ export const PUT = async (request, { params }) => {
       players: formData.get("players"),
       entry: formData.get("entry"),
       start: formData.get("start"),
-      amenities,
+      features,
       typeofquiz: formData.get("typeofquiz"),
       quizmaster: {
         name: formData.get("quizmaster.name"),

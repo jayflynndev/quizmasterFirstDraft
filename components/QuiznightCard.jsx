@@ -1,12 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaBed,
-  FaBath,
-  FaRulerCombined,
-  FaMoneyBill,
-  FaMapMarker,
-} from "react-icons/fa";
+import { GiTabletopPlayers } from "react-icons/gi";
+import { BsCashCoin, BsClock } from "react-icons/bs";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 const QuiznightCard = ({ quiznight }) => {
   return (
@@ -30,16 +26,16 @@ const QuiznightCard = ({ quiznight }) => {
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
           <p>
-            <FaBed className="inline mr-2" /> {quiznight.players}{" "}
+            <GiTabletopPlayers className="inline mr-2" /> {quiznight.players}{" "}
             <span className="md:hidden lg:inline">Max players per team</span>
           </p>
           <p>
-            <FaBath className="inline mr-2" />
+            <BsCashCoin className="inline mr-2" />
             {quiznight.entry}{" "}
             <span className="md:hidden lg:inline">Entry fee per person</span>
           </p>
           <p>
-            <FaRulerCombined className="inline mr-2" />
+            <BsClock className="inline mr-2" />
             {quiznight.start}{" "}
             <span className="md:hidden lg:inline">Start Time</span>
           </p>
@@ -51,7 +47,7 @@ const QuiznightCard = ({ quiznight }) => {
 
         <div className="flex flex-col lg:flex-row justify-between mb-4">
           <div className="flex align-middle gap-2 mb-4 lg:mb-0">
-            <FaMapMarker className="text-orange-700 mt-1" />
+            <FaMapLocationDot className="text-green-700 mt-1" />
             <span className="text-orange-700">
               {" "}
               {quiznight.location.city} {quiznight.location.postcode}{" "}

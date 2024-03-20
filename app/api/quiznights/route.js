@@ -42,8 +42,8 @@ export const POST = async (request) => {
 
     const formData = await request.formData();
 
-    // Access all values from amenities and images
-    const amenities = formData.getAll("amenities");
+    // Access all values from features and images
+    const features = formData.getAll("features");
 
     const images = formData
       .getAll("images")
@@ -63,7 +63,7 @@ export const POST = async (request) => {
       players: formData.get("players"),
       entry: formData.get("entry"),
       start: formData.get("start"),
-      amenities,
+      features,
       typeofquiz: formData.get("typeofquiz"),
       quizmaster: {
         name: formData.get("quizmaster.name"),

@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowRotateLeft } from "react-icons/fa6";
 import QuiznightCard from "@/components/QuiznightCard";
 import Spinner from "@/components/Spinner";
 import QuiznightSearchForm from "@/components/QuiznightSearchForm";
@@ -55,7 +55,7 @@ const SearchResultsPage = () => {
               href="/quiznights"
               className="flex items-center text-blue-500 hover:underline mb-3"
             >
-              <FaArrowAltCircleLeft className="mr-2 mb-1" /> Back To Quiz Nights
+              <FaArrowRotateLeft className="mr-2 mb-1" /> Back To Quiz Nights
             </Link>
             <h1 className="text-2xl mb-4">Search Results</h1>
             {quiznights.length === 0 ? (

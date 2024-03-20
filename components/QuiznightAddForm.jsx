@@ -154,67 +154,67 @@ const QuiznightAddForm = () => {
       </div>
 
       <div className="mb-4">
-        <label className="block text-gray-700 font-bold mb-2">Features</label>
+        <label className="block text-gray-700 font-bold mb-2">feature</label>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
           <div>
             <input
               type="checkbox"
-              id="features_prize"
+              id="feature_prize"
               name="features"
               value="Cash Prize"
               className="mr-2"
             />
-            <label htmlFor="features_prize">Cash Prize</label>
+            <label htmlFor="feature_prize">Cash Prize</label>
           </div>
           <div>
             <input
               type="checkbox"
-              id="features_mbingo"
+              id="feature_mbingo"
               name="features"
               value="Music Bingo"
               className="mr-2"
             />
-            <label htmlFor="features_mbingo">Music Bingo</label>
+            <label htmlFor="feature_mbingo">Music Bingo</label>
           </div>
           <div>
             <input
               type="checkbox"
-              id="features_bingo"
+              id="feature_bingo"
               name="features"
               value="Standard Bingo"
               className="mr-2"
             />
-            <label htmlFor="features_bingo">Standard Bingo</label>
+            <label htmlFor="feature_bingo">Standard Bingo</label>
           </div>
           <div>
             <input
               type="checkbox"
-              id="features_friendly"
+              id="feature_friendly"
               name="features"
               value="Friendly Welcome"
               className="mr-2"
             />
-            <label htmlFor="features_friendly">Friendly Welcome</label>
+            <label htmlFor="feature_friendly">Friendly Welcome</label>
           </div>
           <div>
             <input
               type="checkbox"
-              id="features_book"
+              id="feature_book"
               name="features"
               value="Booking Advised"
               className="mr-2"
             />
-            <label htmlFor="features_book">Booking Advised</label>
+            <label htmlFor="feature_book">Booking Advised</label>
           </div>
           <div>
             <input
               type="checkbox"
-              id="features_sidegames"
+              id="feature_sidegames"
               name="features"
               value="Side Games"
               className="mr-2"
             />
-            <label htmlFor="features_sidegames">Side Games</label>
+            <label htmlFor="feature_sidegames">Side Games</label>
           </div>
         </div>
       </div>

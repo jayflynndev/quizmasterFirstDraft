@@ -10,7 +10,7 @@ import BookmarkButton from "@/components/BookmarkButton";
 import QuiznightContactForm from "@/components/QuiznightContactForm";
 import ShareButtons from "@/components/ShareButtons";
 import Spinner from "@/components/Spinner";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRotateLeft } from "react-icons/fa6";
 
 const QuiznightPage = () => {
   const { id } = useParams();
@@ -56,7 +56,7 @@ const QuiznightPage = () => {
                 href="/quiznights"
                 className="text-blue-500 hover:text-blue-600 flex items-center"
               >
-                <FaArrowLeft className="mr-2" /> Back to Quiz Nights
+                <FaArrowRotateLeft className="mr-2" /> Back to Quiz Nights
               </Link>
             </div>
           </section>

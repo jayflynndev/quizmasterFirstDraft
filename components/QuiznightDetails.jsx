@@ -1,12 +1,7 @@
-import {
-  FaBed,
-  FaBath,
-  FaRulerCombined,
-  FaTimes,
-  FaCheck,
-  FaMapMarker,
-} from "react-icons/fa";
+import { GiTabletopPlayers } from "react-icons/gi";
+import { BsCashCoin, BsClock } from "react-icons/bs";
 import QuiznightMap from "@/components/QuiznightMap";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 const QuiznightDetails = ({ quiznight }) => {
   return (
@@ -15,7 +10,7 @@ const QuiznightDetails = ({ quiznight }) => {
         <div className="text-gray-500 mb-4">{quiznight.dayofweek}</div>
         <h1 className="text-3xl font-bold mb-4">{quiznight.name}</h1>
         <div className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
-          <FaMapMarker className="text-lg text-orange-700 mr-2" />
+          <FaMapLocationDot className="text-lg text-green-700 mr-2" />
           <p className="text-orange-700">
             {quiznight.location.street}, {quiznight.location.city}{" "}
             {quiznight.location.postcode}
@@ -39,15 +34,17 @@ const QuiznightDetails = ({ quiznight }) => {
         <h3 className="text-lg font-bold mb-6">Description & Details</h3>
         <div className="flex justify-center gap-4 text-blue-500 mb-4 text-xl space-x-9">
           <p>
+            <GiTabletopPlayers className="inline-block mr-2" />
             {quiznight.players}{" "}
             <span className="hidden sm:inline">players</span>
           </p>
           <p>
+            <BsCashCoin className="inline-block mr-2" />
             {quiznight.entry}{" "}
             <span className="hidden sm:inline">Entry fee per person</span>
           </p>
           <p>
-            <FaRulerCombined className="inline-block mr-2" />
+            <BsClock className="inline-block mr-2" />
             {quiznight.start}{" "}
             <span className="hidden sm:inline">Start time</span>
           </p>

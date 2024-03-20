@@ -1,12 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  FaBed,
-  FaBath,
-  FaRulerCombined,
-  FaMoneyBill,
-  FaMapMarker,
-} from "react-icons/fa";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { GiTabletopPlayers } from "react-icons/gi";
+import { BsCashCoin, BsClock } from "react-icons/bs";
 
 const FeaturedQuiznightCard = ({ quiznight }) => {
   return (
@@ -23,19 +19,20 @@ const FeaturedQuiznightCard = ({ quiznight }) => {
         <h3 className="text-xl font-bold">{quiznight.name}</h3>
         <div className="text-gray-600 mb-4">{quiznight.dayofweek}</div>
         <h3 className="absolute top-[10px] left-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
-          ${getRateDisplay()}
+          {quiznight.typeofquiz}
         </h3>
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
           <p>
-            <FaBed className="inline-block mr-2" /> {quiznight.players}{" "}
+            <GiTabletopPlayers className="inline-block mr-2" />{" "}
+            {quiznight.players}{" "}
             <span className="md:hidden lg:inline">Players</span>
           </p>
           <p>
-            <FaBath className="inline-block mr-2" /> {quiznight.entry}{" "}
+            <BsCashCoin className="inline-block mr-2" /> {quiznight.entry}{" "}
             <span className="md:hidden lg:inline">Entry</span>
           </p>
           <p>
-            <FaRulerCombined className="inline-block mr-2" />
+            <BsClock className="inline-block mr-2" />
             {quiznight.start}{" "}
             <span className="md:hidden lg:inline">Start Time</span>
           </p>
@@ -47,7 +44,7 @@ const FeaturedQuiznightCard = ({ quiznight }) => {
 
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="flex align-middle gap-2 mb-4 lg:mb-0">
-            <FaMapMarker className="text-lg text-orange-700" />
+            <FaMapLocationDot className="text-lg text-orange-700" />
             <span className="text-orange-700">
               {" "}
               {quiznight.location.city} {quiznight.location.postcode}
