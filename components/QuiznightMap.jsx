@@ -30,7 +30,7 @@ const QuiznightMap = ({ quiznight }) => {
     const fetchCoords = async () => {
       try {
         const res = await fromAddress(
-          `${quiznight.location.street} ${quiznight.location.city} ${quiznight.location.state} ${quiznight.location.zipcode}`
+          `${quiznight.location.street} ${quiznight.location.city} ${quiznight.location.region} ${quiznight.location.postcode}`
         );
 
         //  Check for results
