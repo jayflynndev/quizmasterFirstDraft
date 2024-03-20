@@ -27,11 +27,10 @@ const QuiznightCard = ({ quiznight }) => {
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
           <p>
             <GiTabletopPlayers className="inline mr-2" /> {quiznight.players}{" "}
-            <span className="md:hidden lg:inline">Max players per team</span>
+            <span className="md:hidden lg:inline"> players per team</span>
           </p>
           <p>
-            <BsCashCoin className="inline mr-2" />
-            {quiznight.entry}{" "}
+            <BsCashCoin className="inline mr-2" />£ {quiznight.entry}{" "}
             <span className="md:hidden lg:inline">Entry fee per person</span>
           </p>
           <p>
