@@ -1,5 +1,5 @@
 import { fetchQuiznights } from "@/utils/requests";
-import FeaturedQuiznightCard from "@FeaturedQuiznightCard";
+import FeaturedQuiznightCard from "./FeaturedQuiznightcard";
 
 const FeaturedQuiznights = async () => {
   const quiznights = await fetchQuiznights({
